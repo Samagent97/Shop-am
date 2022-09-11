@@ -2,6 +2,7 @@ import { Component } from "react";
 import { cardDatas } from "../../utils/Data";
 import "./Card.css";
 import Vector from "../../assests/Vector.png";
+import { Link } from "react-router-dom";
 
 class Card extends Component {
   render() {
@@ -19,10 +20,12 @@ class Card extends Component {
           }}
         >
           {cardDatas.map((cardData) => (
-            <div
+            <Link
+              to="/product"
               className="product-Card"
               style={{ margin: "1rem" }}
               key={cardData.id}
+              onClick={() => {this.props.setCurrentItem(cardData)}}
             >
               <div className="product-Card-inner">
                 <div className="product-image">
@@ -44,7 +47,7 @@ class Card extends Component {
                   {cardData.price}
                 </h4>
               </div>
-            </div>
+            </Link>
           ))}
         </section>
       </>

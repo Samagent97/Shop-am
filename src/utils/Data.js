@@ -10,7 +10,7 @@ export let cardDatas = [
   {
     id: 1,
     Image: White,
-    title: "Apollo Running Short",
+    title: "Apollo Running Short 1",
     price: "$50.00",
     optionImage:'',
   },
@@ -18,7 +18,7 @@ export let cardDatas = [
   {
     id: 2,
     Image: Whiteoof,
-    title: "Apollo Running Short",
+    title: "Apollo Running Short 2",
     price: "$50.00",
     optionImage:'',
   },
@@ -26,7 +26,7 @@ export let cardDatas = [
   {
     id: 3,
     Image: Bag,
-    title: "Apollo Running Short",
+    title: "Apollo Running Short 3",
     price: "$50.00",
     optionImage:'',
   },
@@ -34,21 +34,21 @@ export let cardDatas = [
   {
     id: 4,
     Image: Grey,
-    title: "Apollo Running Short",
+    title: "Apollo Running Short 4",
     price: "$50.00",
     optionImage:'',
   },
   {
     id: 5,
     Image: Grey2,
-    title: "Apollo Running Short",
+    title: "Apollo Running Short 5",
     price: "$50.00",
     optionImage:'',
   },
   {
     id: 6,
     Image: Pink,
-    title: "Apollo Running Short",
+    title: "Apollo Running Short 6",
     price: "$50.00",
     optionImage:'',
   },

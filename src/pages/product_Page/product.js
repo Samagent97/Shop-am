@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Navigation from "../../components/Navigation/Navigation";
-import Grey from "../../assests/Grey.png";
-import product from "../../assests/product.png";
+// import Grey from "../../assests/Grey.png";
+// import product from "../../assests/product.png";
 import "./product.css";
 
 class Product extends Component {
@@ -14,24 +14,24 @@ class Product extends Component {
             {/* 3 Image options */}
             <div className="product-option">
               <div>
-                <img src={product} alt="option 1" />
+                <img src={this.props.currentItem.Image} alt="option 1" />
               </div>
               <div>
-                <img src={product} alt="option 2" />
+                <img src={this.props.currentItem.Image} alt="option 2" />
               </div>
               <div>
-                <img src={product} alt="option 3" />
+                <img src={this.props.currentItem.Image} alt="option 3" />
               </div>
             </div>
             <div className="selected-product">
               {/*selected product image component */}
-              <img src={Grey} alt=""></img>
+              <img src={this.props.currentItem.Image} alt=""></img>
             </div>
           </div>
           <div className="right">
             <div>
-              <h4>Apollo</h4>
-              <p>Running Short</p>
+              <h4>{this.props.currentItem.title}</h4>
+              {/* <p>Running Short</p> */}
             </div>
             <div>
               <span>
@@ -57,7 +57,7 @@ class Product extends Component {
 
               <div className="price">
                 <h5>PRICE:</h5>
-                <h4>$50.00</h4>
+                <h4>{this.props.currentItem.price}</h4>
               </div>
               <div>
                 <input
