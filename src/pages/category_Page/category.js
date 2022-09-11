@@ -19,7 +19,7 @@ export default class Category extends Component {
         <Navigation />
         <Title/>
         <ContainerList>
-          <Card/>
+          <Card setCurrentItem={this.props.setCurrentItem} />
         </ContainerList>
       </div>
     );
