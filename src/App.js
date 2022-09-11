@@ -1,10 +1,9 @@
-import { Component, useState } from "react";
+import { Component,  } from "react";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Cart from "./pages/cart_Page/cart";
 import Category from "./pages/category_Page/category";
 import Product from "./pages/product_Page/product";
 import { path } from "./routes";
-import Card from "./components/Card/Card";
 
 
 export default class App extends Component {
