@@ -23,11 +23,14 @@ class Product extends Component {
                 <img src={this.props.currentItem.Image} alt="option 3" style={{width: "100px", height: "100px"}} />
               </div>
             </div>
+
             <div className="selected-product">
               {/*selected product image component */}
               <img src={this.props.currentItem.Image} alt=""></img>
             </div>
+            
           </div>
+          
           <div className="right">
             <div>
               <h4>{this.props.currentItem.title}</h4>
