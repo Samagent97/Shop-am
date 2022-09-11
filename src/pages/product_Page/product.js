@@ -14,13 +14,13 @@ class Product extends Component {
             {/* 3 Image options */}
             <div className="product-option">
               <div>
-                <img src={this.props.currentItem.Image} alt="option 1" />
+                <img src={this.props.currentItem.Image} alt="option 1" style={{width: "100px", height: "100px"}} />
               </div>
               <div>
-                <img src={this.props.currentItem.Image} alt="option 2" />
+                <img src={this.props.currentItem.Image} alt="option 2" style={{width: "100px", height: "100px"}} />
               </div>
               <div>
-                <img src={this.props.currentItem.Image} alt="option 3" />
+                <img src={this.props.currentItem.Image} alt="option 3" style={{width: "100px", height: "100px"}} />
               </div>
             </div>
             <div className="selected-product">
