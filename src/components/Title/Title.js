@@ -18,7 +18,7 @@ export default class Title extends Component {
   render() {
     return (
       <SectionContainer>
-        <SectionWriteup>Category name</SectionWriteup>
+        <SectionWriteup> Shop4Una</SectionWriteup>
       </SectionContainer>
     );
   }
