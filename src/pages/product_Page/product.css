@@ -1,5 +1,5 @@
 .product-overlay{
- width: 100%;
+    width: 100%;
  display:flex;
  flex-direction: row;
  flex-wrap: nowrap;
@@ -8,9 +8,9 @@
  /* align-items: center; */
 }
 .left{
- width: 60%;
- display: flex;
- flex-direction: row;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
 }
 .product-option{
  justify-content: space-between;
@@ -21,7 +21,7 @@
  position: relative;
  /* background-color: aqua; */
  align-items: flex-start;
- height: 50vh;
+ /* height: 50vh; */
 }
 .selected-product{
  width:40%;
@@ -39,7 +39,6 @@
  flex-direction: column;
  position: relative;
  right: 6%;
- /* background-color: aquamarine; */
 }
 
 .size{
@@ -63,4 +62,28 @@ margin-left: -0.5rem;
  width: 1.5rem;
  margin-left: 0.5rem;
  height: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .product-overlay{
+        flex-direction: column;
+        align-items: center;
+        /* background-color: red; */
+    }
+    .left{
+        flex-direction: column;
+        left: 0%;
+    }
+    .product-option{
+        left: 0%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .selected-product{
+        left: 0%;
+        width: 100%;
+        /* height: 10vh; */
+        position: relative;
+    }
 }
