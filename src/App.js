@@ -36,7 +36,7 @@ export default class App extends Component {
           <Link to='/cart'></Link>
         </div>
           <Routes>
-            <Route path={path.category} exact element={<Category setCurrentItem={this.setCurrentItem} />} />
+            <Route path={path.category} exact element= {<Category setCurrentItem={this.setCurrentItem} />} />
             <Route path={path.product} exact element={<Product currentItem={this.state.currentItem}/>} />
             <Route path={path.cartPage} exact element={<Cart />} />
           </Routes>
